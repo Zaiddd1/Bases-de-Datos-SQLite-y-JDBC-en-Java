@@ -60,12 +60,14 @@ public class Practica {
     // crea la tabla emp con 3 campos y la deja vacia para poder repetir el programa
     static void crearTabla() throws SQLException {
         Statement stmt = con.createStatement();
-        stmt.execute("CREATE TABLE IF NOT EXISTS emp (id integer PRIMARY KEY, name text, age integer)");
+        stmt.execute("CREATE TABLE IF NOT EXISTS emp "
+                + "(id integer PRIMARY KEY, name text, age integer)");
         stmt.execute("DELETE FROM emp");
     }
 
     static void insertar(int id, String nombre, int edad) throws SQLException {
-        PreparedStatement ps = con.prepareStatement("INSERT INTO emp (id, name, age) VALUES (?, ?, ?)");
+        PreparedStatement ps = con.prepareStatement(
+                "INSERT INTO emp (id, name, age) VALUES (?, ?, ?)");
         ps.setInt(1, id);
         ps.setString(2, nombre);
         ps.setInt(3, edad);
@@ -95,7 +97,8 @@ public class Practica {
         ResultSet rs = ps.executeQuery();
         System.out.println("Contenido de la tabla emp:");
         while (rs.next()) {
-            System.out.println("  " + rs.getInt("id") + " " + rs.getString("name") + " " + rs.getInt("age"));
+            System.out.println("  " + rs.getInt("id") + " " + rs.getString("name")
+                    + " " + rs.getInt("age"));
         }
     }
 }

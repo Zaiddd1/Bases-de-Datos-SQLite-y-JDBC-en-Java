@@ -3,7 +3,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-// Guarda los registros de la tabla productos en un arreglo de objetos y hace las consultas desde Java
+// Guarda los registros de la tabla productos en un arreglo de objetos
+// y hace las consultas desde Java
 public class Gestor {
 
     private ArrayList<Producto> productos = new ArrayList<Producto>();
@@ -14,7 +15,8 @@ public class Gestor {
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT id, nombre, precio, stock FROM productos");
         while (rs.next()) {
-            productos.add(new Producto(rs.getInt("id"), rs.getString("nombre"), rs.getDouble("precio"), rs.getInt("stock")));
+            productos.add(new Producto(rs.getInt("id"), rs.getString("nombre"),
+                    rs.getDouble("precio"), rs.getInt("stock")));
         }
     }
 
@@ -24,12 +26,14 @@ public class Gestor {
 
     // Consulta al arreglo, como un SELECT:
     //   campos          -> que campos mostrar                (SELECT campo1, campo2 ...)
-    //   campoCondicion  -> campo que debe cumplir condicion  (WHERE campo operador valor), vacio = sin condicion
+    //   campoCondicion  -> campo que debe cumplir condicion  (WHERE campo operador valor)
+    //                      si esta vacio, no hay condicion
     //   campoOrden      -> campo por el que se ordena        (ORDER BY campo), vacio = sin orden
     //   ascendente      -> true = ASC, false = DESC
     //   limite          -> cantidad maxima de registros      (LIMIT n), 0 = sin limite
-    public ArrayList<Producto> consultar(String[] campos, String campoCondicion, String operador, String valor,
-                                         String campoOrden, boolean ascendente, int limite) {
+    public ArrayList<Producto> consultar(String[] campos, String campoCondicion, String operador,
+                                         String valor, String campoOrden, boolean ascendente,
+                                         int limite) {
         // se revisan los datos que dio el usuario
         for (int i = 0; i < campos.length; i++) {
             if (!Producto.campoValido(campos[i])) {
@@ -124,7 +128,8 @@ public class Gestor {
                 return !p.getTexto(campo).equalsIgnoreCase(valor);
             }
         }
-        throw new IllegalArgumentException("El operador '" + operador + "' no se puede usar con el campo " + campo + ".");
+        throw new IllegalArgumentException("El operador '" + operador
+                + "' no se puede usar con el campo " + campo + ".");
     }
 
     // negativo si a va antes que b, 0 si son iguales, positivo si a va despues de b

@@ -19,7 +19,8 @@ public class Producto {
     }
 
     public static boolean campoValido(String campo) {
-        return campo.equals("id") || campo.equals("nombre") || campo.equals("precio") || campo.equals("stock");
+        return campo.equals("id") || campo.equals("nombre") || campo.equals("precio")
+                || campo.equals("stock");
     }
 
     // valor de un campo numerico

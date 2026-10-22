@@ -19,9 +19,10 @@ public class Principal {
 
             // la tabla se crea solo si no existe, asi este programa se ejecuta solo
             Statement crear = con.createStatement();
-            crear.execute("CREATE TABLE IF NOT EXISTS emp (id integer PRIMARY KEY, name text, age integer)");
+            crear.execute("CREATE TABLE IF NOT EXISTS emp "
+                    + "(id integer PRIMARY KEY, name text, age integer)");
 
-            // INSERT OR REPLACE evita el error si el id 5 ya existe (al ejecutar el programa por segunda vez)
+            // insert or replace evita el error si el id 5 ya existe (segunda ejecucion)
             PreparedStatement stmt = con.prepareStatement("insert or replace into emp values(?,?,?)");
             stmt.setInt(1, 5);
             stmt.setString(2, "Laura");

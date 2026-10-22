@@ -6,8 +6,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// Carga la tabla productos en un arreglo y permite hacer consultas indicando, en tiempo de ejecucion,
-// los campos a mostrar, una condicion, el orden y el limite de registros.
+// Carga la tabla productos en un arreglo y permite hacer consultas indicando,
+// en tiempo de ejecucion, los campos a mostrar, una condicion, el orden y el limite.
 public class Main {
 
     public static void main(String[] args) {
@@ -98,7 +98,8 @@ public class Main {
         String[] nombres = {"Laptop", "Mouse", "Teclado", "Monitor", "Audifonos", "Impresora"};
         double[] precios = {2500.0, 35.5, 80.0, 650.0, 120.0, 480.0};
         int[] stocks = {8, 50, 30, 12, 25, 5};
-        PreparedStatement ps = con.prepareStatement("INSERT INTO productos (id, nombre, precio, stock) VALUES (?, ?, ?, ?)");
+        PreparedStatement ps = con.prepareStatement(
+                "INSERT INTO productos (id, nombre, precio, stock) VALUES (?, ?, ?, ?)");
         for (int i = 0; i < nombres.length; i++) {
             ps.setInt(1, i + 1);
             ps.setString(2, nombres[i]);

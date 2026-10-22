@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 // Menu por consola para manejar la tabla productos (id, nombre, precio, stock) de tienda.db.
-// Los cambios (ingresar, borrar, actualizar) solo se confirman si el usuario escribe la clave correcta.
+// Los cambios (ingresar, borrar, actualizar) solo se confirman si se escribe la clave correcta.
 public class Main {
 
     static final String CLAVE = "1234";
@@ -70,7 +70,8 @@ public class Main {
         double precio = leerDecimal("Precio: ");
         int stock = leerEntero("Stock: ");
 
-        PreparedStatement ps = con.prepareStatement("INSERT INTO productos (id, nombre, precio, stock) VALUES (?, ?, ?, ?)");
+        PreparedStatement ps = con.prepareStatement(
+                "INSERT INTO productos (id, nombre, precio, stock) VALUES (?, ?, ?, ?)");
         ps.setInt(1, id);
         ps.setString(2, nombre);
         ps.setDouble(3, precio);
@@ -100,7 +101,8 @@ public class Main {
         double precio = leerDecimal("Nuevo precio: ");
         int stock = leerEntero("Nuevo stock: ");
 
-        PreparedStatement ps = con.prepareStatement("UPDATE productos SET nombre = ?, precio = ?, stock = ? WHERE id = ?");
+        PreparedStatement ps = con.prepareStatement(
+                "UPDATE productos SET nombre = ?, precio = ?, stock = ? WHERE id = ?");
         ps.setString(1, nombre);
         ps.setDouble(2, precio);
         ps.setInt(3, stock);

@@ -17,7 +17,8 @@ public class Principal {
             }
 
             Statement stmt = con.createStatement();
-            stmt.execute("CREATE TABLE IF NOT EXISTS emp (id integer PRIMARY KEY, name text, age integer)");
+            stmt.execute("CREATE TABLE IF NOT EXISTS emp "
+                    + "(id integer PRIMARY KEY, name text, age integer)");
             // se quitan los registros de pruebas anteriores para poder repetir el programa
             stmt.executeUpdate("delete from emp where id in (190, 191, 200)");
 
