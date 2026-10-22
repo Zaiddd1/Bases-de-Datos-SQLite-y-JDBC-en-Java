@@ -1,0 +1,139 @@
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 4
+ID   NOMBRE   PRECIO   STOCK
+(la tabla esta vacia)
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 1
+Id: 1
+Nombre: Laptop
+Precio: 2500
+Stock: 8
+Ingrese la clave para confirmar los cambios: 1234
+Clave correcta: cambios confirmados (commit).
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 1
+Id: 2
+Nombre: Mouse
+Precio: 35.5
+Stock: 50
+Ingrese la clave para confirmar los cambios: 1234
+Clave correcta: cambios confirmados (commit).
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 1
+Id: 3
+Nombre: Teclado
+Precio: 80
+Stock: 30
+Ingrese la clave para confirmar los cambios: 0000
+Clave incorrecta: cambios revertidos (rollback).
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 4
+ID   NOMBRE   PRECIO   STOCK
+1   Laptop   2500.0   8
+2   Mouse   35.5   50
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 3
+Id del producto a actualizar: 2
+Nuevo nombre: Mouse inalambrico
+Nuevo precio: 42.9
+Nuevo stock: 45
+Ingrese la clave para confirmar los cambios: 1234
+Clave correcta: cambios confirmados (commit).
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 2
+Id del producto a borrar: 1
+Ingrese la clave para confirmar los cambios: 9999
+Clave incorrecta: cambios revertidos (rollback).
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 2
+Id del producto a borrar: 1
+Ingrese la clave para confirmar los cambios: 1234
+Clave correcta: cambios confirmados (commit).
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 2
+Id del producto a borrar: 7
+No existe un producto con ese id.
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 4
+ID   NOMBRE   PRECIO   STOCK
+2   Mouse inalambrico   42.9   45
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: abc
+Escriba un numero entero.
+Elija una opcion: 9
+Opcion no valida.
+
+===== MENU DE PRODUCTOS =====
+1. Ingresar producto
+2. Borrar producto
+3. Actualizar producto
+4. Mostrar productos
+5. Salir
+Elija una opcion: 5
+Fin del programa.

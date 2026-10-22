@@ -1,0 +1,5 @@
+Se creo y/o abrio la base de datos: 
+Creacion de tabla exitosa
+Insercion exitosa
+1 Carlos 11
+2 Bety 22

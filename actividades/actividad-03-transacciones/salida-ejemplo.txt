@@ -1,0 +1,3 @@
+Se creo y/o abrio la base de datos: 
+190 jose 77
+191 diana 88

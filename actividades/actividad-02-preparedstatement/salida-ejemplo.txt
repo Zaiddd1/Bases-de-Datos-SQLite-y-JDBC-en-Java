@@ -1,0 +1,3 @@
+Se creo y/o abrio la base de datos: 
+1 records inserted
+5 Laura 55

@@ -1,0 +1,91 @@
+Se cargaron 6 productos en el arreglo.
+
+===== NUEVA CONSULTA =====
+Campos de la tabla: id, nombre, precio, stock
+a) Campos a mostrar (separados por coma, o 'todos'): nombre,precio
+b) Campo de la condicion (Enter = sin condicion): precio
+   Operador (=, !=, >, <, >=, <=): >
+   Valor: 100
+c) Campo para ordenar (Enter = sin orden): precio
+   Orden (asc o desc): desc
+d) Cantidad maxima de registros (0 = todos): 3
+
+nombre   precio   
+Laptop   2500.0   
+Monitor   650.0   
+Impresora   480.0   
+(3 registro(s))
+
+Otra consulta? (s/n): s
+
+===== NUEVA CONSULTA =====
+Campos de la tabla: id, nombre, precio, stock
+a) Campos a mostrar (separados por coma, o 'todos'): todos
+b) Campo de la condicion (Enter = sin condicion): 
+c) Campo para ordenar (Enter = sin orden): stock
+   Orden (asc o desc): asc
+d) Cantidad maxima de registros (0 = todos): 0
+
+id   nombre   precio   stock   
+6   Impresora   480.0   5   
+1   Laptop   2500.0   8   
+4   Monitor   650.0   12   
+5   Audifonos   120.0   25   
+3   Teclado   80.0   30   
+2   Mouse   35.5   50   
+(6 registro(s))
+
+Otra consulta? (s/n): s
+
+===== NUEVA CONSULTA =====
+Campos de la tabla: id, nombre, precio, stock
+a) Campos a mostrar (separados por coma, o 'todos'): nombre,stock
+b) Campo de la condicion (Enter = sin condicion): nombre
+   Operador (=, !=, >, <, >=, <=): =
+   Valor: mouse
+c) Campo para ordenar (Enter = sin orden): 
+d) Cantidad maxima de registros (0 = todos): 0
+
+nombre   stock   
+Mouse   50   
+(1 registro(s))
+
+Otra consulta? (s/n): s
+
+===== NUEVA CONSULTA =====
+Campos de la tabla: id, nombre, precio, stock
+a) Campos a mostrar (separados por coma, o 'todos'): id,color
+b) Campo de la condicion (Enter = sin condicion): 
+c) Campo para ordenar (Enter = sin orden): 
+d) Cantidad maxima de registros (0 = todos): 0
+
+Consulta no valida: El campo 'color' no existe.
+
+Otra consulta? (s/n): s
+
+===== NUEVA CONSULTA =====
+Campos de la tabla: id, nombre, precio, stock
+a) Campos a mostrar (separados por coma, o 'todos'): nombre
+b) Campo de la condicion (Enter = sin condicion): nombre
+   Operador (=, !=, >, <, >=, <=): >
+   Valor: x
+c) Campo para ordenar (Enter = sin orden): 
+d) Cantidad maxima de registros (0 = todos): 0
+
+Consulta no valida: El operador '>' no se puede usar con el campo nombre.
+
+Otra consulta? (s/n): s
+
+===== NUEVA CONSULTA =====
+Campos de la tabla: id, nombre, precio, stock
+a) Campos a mostrar (separados por coma, o 'todos'): nombre,precio
+b) Campo de la condicion (Enter = sin condicion): precio
+   Operador (=, !=, >, <, >=, <=): =
+   Valor: abc
+c) Campo para ordenar (Enter = sin orden): 
+d) Cantidad maxima de registros (0 = todos): 0
+
+Consulta no valida: El valor 'abc' no es un numero.
+
+Otra consulta? (s/n): n
+Fin del programa.

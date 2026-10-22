@@ -1,0 +1,36 @@
+Se creo y/o abrio la base de datos practica.db
+
+--- INSERTAR ---
+Insertado: 1 Carlos 20
+Insertado: 2 Bety 22
+Insertado: 3 Laura 25
+commit: los 3 registros quedaron guardados
+Contenido de la tabla emp:
+  1 Carlos 20
+  2 Bety 22
+  3 Laura 25
+
+--- ACTUALIZAR ---
+Actualizados: 1 registro(s)
+Contenido de la tabla emp:
+  1 Carlos 20
+  2 Beatriz 23
+  3 Laura 25
+
+--- BORRAR ---
+Borrados: 1 registro(s)
+Contenido de la tabla emp:
+  1 Carlos 20
+  2 Beatriz 23
+
+--- ROLLBACK ---
+Insertado: 4 Diana 30
+Borrados: 1 registro(s)
+Antes del rollback:
+Contenido de la tabla emp:
+  2 Beatriz 23
+  4 Diana 30
+rollback: los dos cambios anteriores se cancelaron
+Contenido de la tabla emp:
+  1 Carlos 20
+  2 Beatriz 23
